@@ -17,40 +17,58 @@
     <!-- <p id="demo">Hello</p>
     <script>
         const element = document.getElementById("demo") 
+        console.log(element)
         console.log(element.innerText) 
-    </script>        -->
+    </script>        --> 
 
-    <!-- <p class="demo">Hi</p>
-       
 
+
+
+
+    <!-- < <p class="demo">Hi</p>
+     <p class="demo">Hioneee</p>
     <script>
         const elements = document.getElementsByClassName("demo")
-        console.log(elements[0].innerText)
-    </script> -->
+        console.log(elements)
+        console.log(elements[1].innerText)
+    </script> --> 
 
-    <!-- <div>First</div>
+
+
+
+
+    <!--  <div>First</div>
     <div>Second</div>
     <p>this is para</p>
     <h1>this is h1</h1>
-
     <script>
         const divs = document.getElementsByTagName("div")
          console.log(divs[0].innerText)
         console.log(divs[1].innerText)
-    </script> -->
+    </script> --> 
 
-    <!-- <div class="greet">Heyyyy!</div>
+
+
+
+
+    <!--  <div class="greet">Heyyyyoneee!</div>
+    <div class="greet">Heyyyy!</div>
     <div id="first">first</div>
 
     <script>
         const element = document.querySelector(".greet")
         console.log(element.innerText)
+        console.log(element[1]?.innerText)
 
         const element1 = document.querySelector("#first")
         console.log(element1.innerText)
     </script> -->
 
-    <!-- <div class="greet">hi</div>
+
+
+
+
+    <!--  <div class="greet">hi</div>
     <div class="greet">hello</div>
     <div class="greet">How are u </div>  
 
@@ -58,25 +76,37 @@
 
     <script>
         const element = document.querySelectorAll(".greet")
+        console.log(element)
         console.log(element[1].innerText);
 
         const element1 = document.querySelectorAll("#second")
         console.log(element1[0].innerText);
-    </script> -->
+    </script> --> 
+
+
+
+
 
     <!-- <p id="text" >Text here</p>
-
     <script>
         const element = document.getElementById("text")
+        console.log(element)
         element.setAttribute("style", "color : red")
     </script> -->
 
-    <!-- <input type="number"  >
 
+
+
+
+    <!--  <input type="number"  >
     <script>
         const element = document.querySelector("input")
         element.removeAttribute("type")
     </script> -->
+
+
+
+
 
     <!-- <div id="demo">
         Hello <br> <span style="display: none;">Hidden</span> world
@@ -87,7 +117,11 @@
       console.log(text);
      </script> -->
 
-     <!-- <div id="p1"></div>
+
+
+
+
+    <!--  <div id="p1"></div>
 
      <script>
         document.getElementById("p1").innerText = "<b>Hello</b>"
@@ -123,6 +157,11 @@
         console.log(attrvalue);
      </script> -->
 
+
+
+
+
+
      <!-- <a href="https://www.google.com/" id="link">Click Me</a>
 
      <script>
@@ -130,12 +169,17 @@
         console.log(link.getAttribute("href"));
      </script> -->
 
-     <!-- <div id="my_div">
+
+
+
+
+    <!--  <div id="my_div">
        
      </div>
 
      <script>
         let h1 = document.createElement("h1")
+        console.log(h1)
         h1.textContent = "abcdef"
 
         let p = document.createElement("p")
@@ -145,6 +189,9 @@
         div.appendChild(h1)   
         div.appendChild(p)     
      </script> -->
+
+
+
 
 
      <!-- <div id="my_div">
@@ -160,6 +207,10 @@
         div.appendChild(h1)
      </script> -->
 
+
+
+
+
      <!-- <div id="my_div">
         <h1 id="my_h1">Hello, HI how are u </h1>
      </div>
@@ -171,14 +222,17 @@
         // div.removeChild(h1)
 
         let p = document.createElement("p")
-        p.innerHTML = "Hello, I am p"
+        p.innerHTML = "<strong> Hello, I am p </strong>"
 
         div.insertBefore(p,h1)
-
      </script> -->
 
-<!-- 
-     <div id="my_div">
+
+
+
+
+
+     <!-- <div id="my_div">
         <h1 id="my_h1">Hello, HI how are u </h1>
      </div>
 
@@ -205,7 +259,11 @@
         div1.replaceChild(h11,h2)
      </script> -->
 
-     <!-- <input type="text" id="uname" placeholder="enter userName">
+
+
+
+    
+    <!--  <input type="text" id="uname" placeholder="enter userName">
      <br><br>
      <input type="password" id="upwd" placeholder="enter password">
      <br><br>
@@ -219,7 +277,7 @@
 
             let h1 = document.getElementById("res")
 
-            if(uname == "srikanth" && upwd == "ree0508"){
+            if(uname == "Balu" && upwd == "Balu"){
                 h1.classList.remove("c2")
                 h1.innerHTML = "Login Sucess"
                 h1.classList.add("c1")
@@ -231,6 +289,10 @@
         }
      </script> -->
 
+
+
+
+
      <!-- <h1 id="my_h1">Hello, Hi</h1>
      <button onclick="fun_one()" >Toggle</button>
      <h1 id="res"></h1>
@@ -241,7 +303,7 @@
             h1.classList.toggle("c1")
 
             let h11 = document.getElementById("res")
-            if(h11.classList.contains("c1")){
+            if(h1.classList.contains("c1")){
                 h11.innerText = "c1 contains"
             }
             else{
@@ -293,15 +355,21 @@
     // document.write(y-10, "<br>")   
     // document.write(y*3, "<br>")    
 
-    // var largenum = 39475923485793847593485793847593845793845792384579384759384759384759384573984759348739085739048739458739485793845n
-    // document.write(largenum,"<br>")
+     //var largenum = 39475923485793847593485793847593845793845792384579384759384759384759384573984759348739085739048739458739485793845n
+     //document.write(largenum,"<br>")
 
-    // var s =Symbol("balu")
-    // document.write(s)
-
-    
-
+     //var s =Symbol("balu")
+     //document.write(s)
+    // console.log(s)
 
      </script>
 </body>
 </html>
+
+<!-- <script>
+
+    //Notes
+    getElementByClass <== []
+    querySelector <== single
+    querySelectorAll <== []  (inside querySelectorAll if it is class or id it <== [])
+</script> -->
